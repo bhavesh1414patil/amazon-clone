@@ -1,0 +1,1196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    Amazon Clone Online Shopping Webpage
+  </title>
+  <link rel="icon" type="image/png" href="amazon_icon.png"/>
+  
+  <link href='https://unpkg.com/boxicons@2.1.4/dist/boxicons.js' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" >
+</head>
+<body>
+<div class="head">
+    <div class="logo">
+      <img src="amazon_logo.png">
+    </div>
+
+  <div class="location">
+    
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="35" fill="white" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+      </svg>
+  
+    <div class="a">
+      <div class="aa">
+        Delivering to Badlapur 421503
+      </div>
+      Update location
+    </div>
+  </div>
+<div class="search">
+  <div class="search-container">
+    <select id="category" name="category">
+        <option value="all">All</option>
+        <option value="cars">Cars</option>
+        <option value="phones">Phones</option>
+        <option value="laptops">Laptops</option>
+    </select>
+</div>
+  <input type="text" id="search-bar" placeholder="   Search Amazon.in">
+  <button id="search-icon">
+    <svg id="magnifying-glass" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <path d="M21.8 20.3l-3.7-3.7C19.3 15.4 20 13 20 10 20 5.4 15.5 1 11 1S2 5.4 2 10s4.5 9 9 9c3 0 5.7-1.5 7.3-3.8l3.7 3.7c.1.1.2.2.4.2s.3-.1.4-.2c.2-.2.2-.5 0-.7zM3 10c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8-8-3.6-8-8z"/>
+    </svg>
+  </button>
+</div>
+
+<div class="language-selector">
+  <div class="select-box" onclick="toggleOptions()">
+    <div class="ind">
+    <img  src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/1200px-Flag_of_India.svg.png" alt="Flag of India" > 
+  </div>
+    <div style="color: white;margin-left:5px;font-size:13px;"><b>EN</b></div>
+    <div class="arrow-down">&#9660;</div>
+  </div>
+  <div class="options" id="options">
+    <div class="option" onclick="selectLanguage('english')">English</div>
+    <div class="option" onclick="selectLanguage('spanish')">Spanish</div>
+    <div class="option" onclick="selectLanguage('french')">French</div>
+    <!-- Add more language options as needed -->
+  </div>
+</div>
+
+<script>
+  function toggleOptions() {
+    var options = document.getElementById('options');
+    options.style.display = options.style.display === 'none' ? 'block' : 'none';
+  }
+
+  function selectLanguage(language) {
+    var selectBox = document.querySelector('.select-box');
+    selectBox.textContent = language;
+    toggleOptions();
+    // You can perform additional actions here based on the selected language
+  }
+</script>
+
+
+<div class="language-selector1">
+  <div class="select-box1" onclick="toggleOptions()">
+    <div class="sign">
+         Hello,sign in
+        <div class="sign1">
+        <b>Account & Lists</b>
+        </div>
+    </div>
+    <div class="arrow-down1">&#9660;</div>
+  </div>
+  <div class="options1" id="options1">
+    <div class="option1" onclick="selectLanguage('english')">English</div>
+    <div class="option1" onclick="selectLanguage('spanish')">Spanish</div>
+    <div class="option1" onclick="selectLanguage('french')">French</div>
+    <!-- Add more language options as needed -->
+  </div>
+</div>
+
+<script>
+  function toggleOptions() {
+    var options = document.getElementById('options1');
+    options.style.display = options.style.display === 'none' ? 'block' : 'none';
+  }
+
+  function selectLanguage(language) {
+    var selectBox = document.querySelector('.select-box1');
+    selectBox.textContent = language;
+    toggleOptions();
+    // You can perform additional actions here based on the selected language
+  }
+</script>
+
+<div class="rd">
+  <a href="#"></a>
+ <div class="sign"> 
+  Returns
+</div>
+<div class="sign1">
+ <b> & Orders</b>
+</div>
+</div>
+
+<div class="cart">
+  <img src="cart.png" alt="cart">
+</div>
+  
+</div>
+
+<div class="h2">
+  <div class="h3">
+    <option>
+    All
+  </option>
+  </div>
+  <div class="h3">
+     Amazon miniTV
+  </div>
+  <div class="h3">
+    Sell
+  </div>
+  <div class="h3">
+     Best Sellers
+  </div> <div class="h3">
+    All
+  </div>
+  <div class="h3">
+     Today's Deals
+  </div> <div class="h3">
+    Mobiles
+  </div>
+  <div class="h3">
+     Customer Service
+  </div>
+  <div class="h3">
+    Electronics
+ </div>
+  <div class="img">
+    <a href="https://play.google.com/store/apps/details?id=in.amazon.mShop.android.shopping&hl=en_IN&gl=US&pli=1">
+      <img  src="shopping made easy.jpg">
+    </a>
+    
+  </div>
+
+</div>
+<button id="prev" onclick="changeBackground(-1)">❮</button>
+<button id="next" onclick="changeBackground(1)">❯</button>
+
+  <script>
+    let currentImageIndex = 0;
+    const images = [
+      'background6.jpg',
+      'background1.jpg',
+      'background2.jpg',
+      'background3.jpg',
+      'background4.jpg',
+      'background5.jpg',
+      'background.jpg',
+      'background7.jpg',
+      'background8.jpg',
+      'background9.jpg',
+    ];
+
+    function changeBackground(direction) {
+      currentImageIndex += direction;
+
+      if (currentImageIndex < 0) {
+        currentImageIndex = images.length - 1;
+      } else if (currentImageIndex >= images.length) {
+        currentImageIndex = 0;
+      }
+
+      document.body.style.backgroundImage = `url('${images[currentImageIndex]}')`;
+    }
+
+    // Set initial background
+    document.body.style.backgroundImage = `url('${images[currentImageIndex]}')`;
+  </script>
+
+
+<div class="main1">
+  <div id="p1"class="card1">
+      <div class="title1">
+         <h1>Get the perfect screen size<br>|TVs starting $6,999</h1>
+      </div>
+      <div class="images">        
+        <div  class="image1">
+          <img src="card1.jpg">
+        </div>
+        <div  class="image1">
+          <img src="43 inch.jpg">
+        </div>
+      </div>
+      <div class="adlet" style="gap:50px;">
+         <p>Budget TVs | Up to <br>60% off</p>
+         <p>4K TVs | Up to 24 <br>months No Cost EMI</p>
+      </div>
+      <div class="images">        
+        <div  class="image1">
+          <img src="55 inch.jpg">
+        </div>
+        <div  class="image1">
+          <img src="65 inch.jpg">
+        </div>
+      </div>
+      <div class="adlet" style="gap:50px;">
+         <p>Big Screens |Free<br>installation</p>
+         <p>Ultra Premium TVs |<br>Up to 50% off</p>
+      </div>
+      <div style="font-size: 13px ;color:#007185;margin-left:20px;">
+        See all offers
+      </div>
+  </div>
+
+
+  <div id="p1"class="card1">
+      <div class="title1">
+          <h1>Up to 60% off | Styles for <br>men</h1>
+      </div>
+      <div class="images">        
+        <div  class="image1">
+          <img src="clothing.jpg">
+        </div>
+        <div  class="image1">
+          <img src="footwear.jpg">
+        </div> 
+      </div>
+    <div class="adlet" style="gap:90px;">
+      <p>Clothing</p>
+      <p>Footwear</p>
+    </div>
+    <div class="images" style="margin-top: 20px;">        
+      <div  class="image1">
+        <img src="watches.jpg">
+      </div>
+      <div  class="image1">
+        <img src="bags & wallets.jpg">
+      </div> 
+    </div>
+  <div class="adlet" style="gap:90px;">
+    <p>Watches</p>
+    <p>Bags & wallets</p>
+  </div>
+  <div style="font-size: 13px ;color:#007185;margin-left:20px;margin-top:10px">
+    See all offers
+  </div>
+</div>  
+
+
+
+  <div id="p1"class="card1">
+    <div class="title1">
+       <h1>Up to 75% off |<br> Headphones</h1>
+    </div>
+    <div class="images">        
+      <div  class="image1">
+        <img src="boat.jpg">
+      </div>
+      <div  class="image1">
+        <img src="boult.jpg">
+      </div>
+    </div>
+    <div class="adlet" style="gap:30px;">
+       <p>Up to 75% off | boAt</p>
+       <p>Up to 75% off | boult</p>
+    </div>
+    <div class="images" style="margin-top: 20px;">        
+      <div  class="image1">
+        <img src="noise.jpg">
+      </div>
+      <div  class="image1">
+        <img src="zebronics.jpg">
+      </div>
+    </div>
+    <div class="adlet" style="gap:30px;">
+       <p>Up to 75% off | Noise</p>
+       <p>Up to 75% off | Zebronics</p>
+    </div>
+    <div style="font-size: 13px ;color:#007185;margin-left:20px;">
+      See all offers
+    </div>
+</div>
+
+<div id="p1"class="card1">
+  <div class="title1">
+     <h1>Starting ₹89 | Amazon<br>Brands & more</h1>
+  </div>
+  <div class="images">        
+    <div  class="image1">
+      <img src="kitchen tools.jpg">
+    </div>
+    <div  class="image1">
+      <img src="storage containers.jpg">
+    </div>
+  </div>
+  <div class="adlet" style="gap:70px;">
+     <p>Starting ₹89 | <br>Kitchen tools</p>
+     <p>Starting ₹279 | <br>Storage containers</p>
+  </div>
+  <div class="images">        
+    <div  class="image1">
+      <img src="cookware.jpg">
+    </div>
+    <div  class="image1">
+      <img src="racks & holders.jpg">
+    </div>
+  </div>
+  <div class="adlet" style="gap:50px;">
+     <p>Minimum 40% off |<br> Cookware</p>
+     <p>Up to 60% off |<br> Racks & holders</p>
+  </div>
+  <div style="font-size: 13px ;color:#007185;margin-left:20px;">
+    See all offers
+  </div>
+</div>            
+</div> 
+
+
+<div class="main2">
+  <div id="p1"class="card1">
+    <div class="title1">
+       <h1>Toys & games | Amazon <br>brands</h1>
+    </div>
+    <div class="images">        
+      <div  class="image1">
+        <img src="toy1.jpg">
+      </div>
+      <div  class="image1">
+        <img src="toy2.jpg">
+      </div>
+    </div>
+    <div class="adlet" style="gap:10px;">
+       <p>Minimum 50% off | <br>Bikes, trikes & ride-ons</p>
+       <p>Starting ₹149 | <br>Sports & outdoor games</p>
+    </div>
+    <div class="images">        
+      <div  class="image1">
+        <img src="toy3.jpg">
+      </div>
+      <div  class="image1">
+        <img src="toy4.jpg">
+      </div>
+    </div>
+    <div class="adlet" style="gap:30px;">
+       <p>Starting ₹149 | Soft <br>toys</p>
+       <p>Minimum 40% off | <br>Indoor games</p>
+    </div>
+    <div style="font-size: 13px ;color:#007185;margin-left:20px;">
+      See all offers
+    </div>
+</div>
+
+
+<div id="p1"class="card1">
+  <div class="title1">
+      <h1>Appliances for your <br>home | Up to 55% off</h1>
+  </div>
+  <div class="images">        
+    <div  class="image1">
+      <img src="appliance1.jpg">
+    </div>
+    <div  class="image1">
+      <img src="appliance2.jpg">
+    </div> 
+  </div>
+<div class="adlet" style="gap:70px;">
+  <p>Air conditioner</p>
+  <p>Refrigerators</p>
+</div>
+<div class="images" style="margin-top: 20px;">        
+  <div  class="image1">
+    <img src="appliance3.jpg">
+  </div>
+  <div  class="image1">
+    <img src="appliance4.jpg">
+  </div> 
+</div>
+<div class="adlet" style="gap:70px;">
+<p>Macrowaves</p>
+<p>Washing machines</p>
+</div>
+<div style="font-size: 13px ;color:#007185;margin-left:20px;margin-top:10px">
+See all offers
+</div>
+</div>  
+
+
+
+<div id="p1"class="card1">
+<div class="title1">
+   <h1>Automotive essentials | <br>Up to 60% off</h1>
+</div>
+<div class="images">        
+  <div  class="image1">
+    <img src="automotive1.jpg">
+  </div>
+  <div  class="image1">
+    <img src="automotive2.jpg">
+  </div>
+</div>
+<div class="adlet" style="gap:55px;">
+   <p>clean acessories</p>
+   <p>Tyre & rim care</p>
+</div>
+<div class="images" style="margin-top: 20px;">        
+  <div  class="image1">
+    <img src="automotive3.jpg">
+  </div>
+  <div  class="image1">
+    <img src="automotive4.jpg">
+  </div>
+</div>
+<div class="adlet" style="gap:95px;">
+   <p>Helmets</p>
+   <p>Vaccum Cleaner</p>
+</div>
+<div style="font-size: 13px ;color:#007185;margin-left:20px;">
+  See all offers
+</div>
+</div>
+
+<div id="p1"class="card1">
+<div class="title1">
+ <h1>Starting ₹89 | Amazon<br>Brands & more</h1>
+</div>
+<div class="images">        
+<div  class="image1">
+  <img src="bottle.jpg">
+</div>
+<div  class="image1">
+  <img src="storage.jpg">
+</div>
+</div>
+<div class="adlet" style="gap:70px;">
+ <p>Starting ₹139 | <br>Kitchen tools</p>
+ <p>Starting ₹279 | <br>Storage containers</p>
+</div>
+<div class="images">        
+<div  class="image1">
+  <img src="kitchen.jpg">
+</div>
+<div  class="image1">
+  <img src="racks.jpg">
+</div>
+</div>
+<div class="adlet" style="gap:50px;">
+ <p>Minimum 40% off |<br> Cookware</p>
+ <p>Up to 60% off |<br> Racks & holders</p>
+</div>
+<div style="font-size: 13px ;color:#007185;margin-left:20px;">
+See all offers
+</div>
+</div>            
+</div>
+
+
+<div class="card-container">
+  <div class="td_txt">
+    <h1>Today's Deals</h1>
+    <a href="#"><h3 style="margin-top: 20px;margin-left:15px;">See all deals</h3></a>
+  </div>
+  <div class="cards">
+     
+    <div id="card1" class="card">
+        <img class="cimg" src="card2.jpg">
+        <div style="display: flex;">
+           <div class="dis">
+              <h1>Up to 24% off</h1>
+           </div>
+              <h2 style="color: rgb(165, 8, 8); font-size:12px; margin-left:10px;">
+                 Deal of the Day
+              </h2>
+        </div>
+        <div style="color: black;font-size:10px; font-size:12px">
+          FESTEL Gardening Tools
+        </div>
+    </div>
+      
+      
+      <div id="card1" class="card">
+        <img class="cimg" src="card3.jpg">
+        <div style="display: flex;">
+        <div class="dis">
+          <h1>Up to 24% off</h1>
+        </div>
+        <h2 style="color: rgb(165, 8, 8); font-size:12px; margin-left:10px;">
+          Deal of the Day
+        </h2>
+      </div>
+      <div style="color: black;font-size:10px; font-size:12px;">
+        Great Deals on Health and Sports SupplementsGreat...
+      </div>
+      </div>
+
+      <div id="card1" class="card">
+        <img class="cimg" src="card4.jpg">
+        <div style="display: flex;">
+        <div class="dis">
+          <h1>Up to 24% off</h1>
+        </div>
+        <h2 style="color: rgb(165, 8, 8); font-size:12px; margin-left:10px;">
+          Deal of the Day
+        </h2>
+      </div>
+      <div style="color: black;font-size:10px; font-size:12px">
+      FESTEL Gardening Tools
+      </div>
+      </div>
+      
+      <div id="card1" class="card">
+        <img class="cimg" src="card5.jpg">
+        <div style="display: flex;">
+        <div class="dis">
+          <h1>Up to 24% off</h1>
+        </div>
+        <h2 style="color: rgb(165, 8, 8); font-size:12px; margin-left:10px;">
+          Deal of the Day
+        </h2>
+      </div>
+      <div style="color: black;font-size:10px; font-size:12px">
+      FESTEL Gardening Tools
+      </div>
+
+      </div>
+
+      <div id="card1" class="card">
+        <img class="cimg" src="card6.jpg">
+        <div style="display: flex;">
+        <div class="dis">
+          <h1>Up to 24% off</h1>
+        </div>
+        <h2 style="color: rgb(165, 8, 8); font-size:12px; margin-left:10px;">
+          Deal of the Day
+        </h2>
+      </div>
+      <div style="color: black;font-size:10px; font-size:12px">
+      FESTEL Gardening Tools
+      </div>
+
+      </div>
+
+      <div id="card1" class="card">
+        <img class="cimg" src="card7.jpg">
+        <div style="display: flex;">
+        <div class="dis">
+          <h1>Up to 24% off</h1>
+        </div>
+        <h2 style="color: rgb(165, 8, 8); font-size:12px; margin-left:10px;">
+          Deal of the Day
+        </h2>
+      </div>
+      <div style="color: black;font-size:10px; font-size:12px">
+      FESTEL Gardening Tools
+      </div>
+
+      </div>
+
+
+      <div id="card1" class="card">
+        <img class="cimg" src="card10.jpg">
+        <div style="display: flex;">
+        <div class="dis">
+          <h1>Up to 24% off</h1>
+        </div>
+        <h2 style="color: rgb(165, 8, 8); font-size:12px; margin-left:10px;">
+          Deal of the Day
+        </h2>
+      </div>
+      <div style="color: black;font-size:10px; font-size:12px">
+      FESTEL Gardening Tools
+      </div>
+
+      </div>
+
+
+      <div id="card1" class="card">
+        <img class="cimg" src="card9.jpg">
+        <div style="display: flex;">
+        <div class="dis">
+          <h1>Up to 24% off</h1>
+        </div>
+        <h2 style="color: rgb(165, 8, 8); font-size:12px; margin-left:10px;">
+          Deal of the Day
+        </h2>
+      </div>
+      <div style="color: black;font-size:10px; font-size:12px">
+      FESTEL Gardening Tools
+      </div>
+
+      </div>
+
+
+      <div id="card1" class="card">
+        <img class="cimg" src="card11.jpg">
+        <div style="display: flex;">
+        <div class="dis">
+          <h1>Up to 24% off</h1>
+        </div>
+        <h2 style="color: rgb(165, 8, 8); font-size:12px; margin-left:10px;">
+          Deal of the Day
+        </h2>
+      </div>
+      <div style="color: black;font-size:10px; font-size:12px">
+      FESTEL Gardening Tools
+      </div>
+
+      </div>
+
+  
+  <div class="nav-icons">
+    <button class="nav-icon" onclick="prevCard1()" id="prevBtn">&#8249;</button>
+    <button class="nav-icon" onclick="nextCard1()" id="nextBtn">&#8250;</button>
+  </div>
+</div>
+</div>
+
+
+<script>
+  let currentIndex = 0;
+
+  function prevCard1() {
+      currentIndex = (currentIndex - 1 + 3) % 3;
+      updateCards();
+  }
+
+  function nextCard1() {
+      currentIndex = (currentIndex + 1) % 3;
+      updateCards();
+  }
+
+  function updateCards() {
+      const cardsContainer = document.querySelector('.cards');
+      cardsContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+  }
+</script>
+
+<div class="slider-container">
+  <div class="td_txt">
+    <h1>Up to 70% off | Home decor that unveils a world of elegance</h1>
+    <a href="#"><h3 style="margin-top: 20px;margin-left:15px;">See all deals</h3></a>
+  </div>
+  <div class="slider" id="slider">
+    <div class="card">
+      <img class="cimg" src="card11.jpg">
+    </div>
+    <div class="card">
+      <img class="cimg" src="card12.jpg">
+    </div>
+    <div class="card">
+      <img class="cimg" src="card13.jpg">
+    </div>
+    
+    <div class="card">
+      <img class="cimg" src="card14.jpg">
+    </div>
+    
+    <div class="card">
+      <img class="cimg" src="card15.jpg">
+    </div>
+    
+    <div class="card">
+      <img class="cimg" src="card16.jpg">
+    </div>
+    
+    <div class="card">
+      <img class="cimg" src="card10.jpg">
+    </div>
+
+    <div class="card">
+      <img class="cimg" src="card18.jpg">
+    </div>
+
+    <div class="card">
+      <img class="cimg" src="card19.jpg">
+    </div>
+    <!-- Add more cards as needed -->
+  </div>
+
+  <div class="nav-icons">
+    <button class="nav-icon" onclick="prevCard('slider')" id="prevBtn">&#8249;</button>
+    <button class="nav-icon" onclick="nextCard('slider')" id="nextBtn">&#8250;</button>
+  </div>
+</div>
+
+<script>
+  let currentIndex1 = 0;
+  const slider = document.getElementById('slider');
+  const cards = document.querySelectorAll('.card');
+  const totalCards = cards.length;
+  const prevBtn = document.getElementById('prevBtn');
+  const nextBtn = document.getElementById('nextBtn');
+
+  function updateButtons() {
+    prevBtn.disabled = currentIndex === 0;
+    nextBtn.disabled = currentIndex === totalCards - 1;
+  }
+
+  function showCard(index) {
+    currentIndex = Math.min(Math.max(index, 0), totalCards - 1);
+
+    const newTransformValue = -currentIndex * (300 + 10) + 'px'; // Width of card + margin-right
+    slider.style.transform = 'translateX(' + newTransformValue + ')';
+    updateButtons();
+  }
+
+  function prevCard() {
+    showCard(currentIndex - 1);
+  }
+
+  function nextCard() {
+    showCard(currentIndex + 1);
+  }
+
+  updateButtons(); // Initialize button state
+</script>
+
+<div class="ad1">
+  <a href="https://www.amazon.in/minitv/tp/03efc93d-9625-48dd-b29f-4b456e929b9d?aref=[[CS_MADS_TOKEN]]&aaxitk=41db3db5e4f27925e9b2ecf5428d4a09&dplnk=mIngress&mtv_pt=gateway&refMarker=avod_in_gw_ad_dBTF_Open_SlumGolf">
+    <img src="ad1.jpeg">
+  </a>
+</div>
+
+
+<!-- new Slider 1 -->
+<div class="slider-container" id="sliderContainer1">
+  <div class="td_txt">
+    <h1>Up to 45% off | Beds and mattresses crafted for the best comfort</h1>
+    <a href="#"><h3 style="margin-top: 20px;margin-left:15px;">See all deals</h3></a>
+  </div>
+  <div class="slider-content" id="sliderContent1">
+    <div class="card"><img class="cimg" src="bed1.jpg"></div>
+    <div class="card"><img class="cimg" src="bed2.jpg"></div>
+    <div class="card"><img class="cimg" src="bed3.jpg"></div>
+    <div class="card"><img class="cimg" src="bed4.jpg"></div>
+    <div class="card"><img class="cimg" src="bed5.jpg"></div>
+    <div class="card"><img class="cimg" src="bed6.jpg"></div>
+    <div class="card"><img class="cimg" src="bed7.jpg"></div>
+    <div class="card"><img class="cimg" src="bed8.jpg"></div>
+    <div class="card"><img class="cimg" src="bed9.jpg"></div>
+    <div class="card"><img class="cimg" src="bed13.jpg"></div>
+    <div class="card"><img class="cimg" src="bed10.jpg"></div>
+    <div class="card"><img class="cimg" src="bed11.jpg"></div>
+    <div class="card"><img class="cimg" src="bed12.jpg"></div>
+    <div class="card"><img class="cimg" src="bed13.jpg"></div>
+  </div>
+  
+<div class="nav-icons">
+  <button class="slider-btn" onclick="prevSlide('sliderContent1')">&#8249;</button>
+  <button class="slider-btn" onclick="nextSlide('sliderContent1')">&#8250;</button>
+  </div>
+</div>
+
+
+<div class="main3">
+  <div id="p1"class="card1">
+      <div class="title1">
+         <h1>Get the perfect screen size<br>|TVs starting $6,999</h1>
+      </div>
+      <div class="images">        
+        <div  class="image1">
+          <img src="card1.jpg">
+        </div>
+        <div  class="image1">
+          <img src="43 inch.jpg">
+        </div>
+      </div>
+      <div class="adlet" style="gap:40px;">
+         <p>Budget TVs | Up to <br>60% off</p>
+         <p>4K TVs | Up to 24 <br>months No Cost EMI</p>
+      </div>
+      <div class="images">        
+        <div  class="image1">
+          <img src="55 inch.jpg">
+        </div>
+        <div  class="image1">
+          <img src="65 inch.jpg">
+        </div>
+      </div>
+      <div class="adlet" style="gap:50px;">
+         <p>Big Screens |Free<br>installation</p>
+         <p>Ultra Premium TVs |<br>Up to 50% off</p>
+      </div>
+      <div style="font-size: 13px ;color:#007185;margin-left:20px;">
+        See all offers
+      </div>
+  </div>
+
+
+  <div id="p1"class="card1">
+      <div class="title1">
+          <h1>Up to 60% off | Styles for <br>men</h1>
+      </div>
+      <div class="images">        
+        <div  class="image1">
+          <img src="clothing.jpg">
+        </div>
+        <div  class="image1">
+          <img src="footwear.jpg">
+        </div> 
+      </div>
+    <div class="adlet" style="gap:130px;">
+      <p>Clothing</p>
+      <p>Footwear</p>
+    </div>
+    <div class="images" style="margin-top: 20px;">        
+      <div  class="image1">
+        <img src="watches.jpg">
+      </div>
+      <div  class="image1">
+        <img src="bags & wallets.jpg">
+      </div> 
+    </div>
+  <div class="adlet" style="gap:130px;">
+    <p>Watches</p>
+    <p>Bags & wallets</p>
+  </div>
+  <div style="font-size: 13px ;color:#007185;margin-left:20px;margin-top:10px">
+    See all offers
+  </div>
+</div>  
+
+
+
+  <div id="p1"class="card1">
+    <div class="title1">
+       <h1>Up to 75% off Headphones</h1>
+    </div>
+    <div class="images">        
+      <div  class="image1">
+        <img src="boat.jpg">
+      </div>
+      <div  class="image1">
+        <img src="boult.jpg">
+      </div>
+    </div>
+    <div class="adlet" style="gap:55px;">
+       <p>Up to 75% off | boAt</p>
+       <p>Up to 75% off | boult</p>
+    </div>
+    <div class="images" style="margin-top: 20px;">        
+      <div  class="image1">
+        <img src="noise.jpg">
+      </div>
+      <div  class="image1">
+        <img src="zebronics.jpg">
+      </div>
+    </div>
+    <div class="adlet" style="gap:55px;">
+       <p>Up to 75% off | Noise</p>
+       <p>Up to 75% off | Zebronics</p>
+    </div>
+    <div style="font-size: 13px ;color:#007185;margin-left:20px;">
+      See all offers
+    </div>
+</div>
+
+<div id="p1"class="card1">
+  <div class="title1">
+     <h1>Starting ₹89 | Amazon<br>Brands & more</h1>
+  </div>
+  <div class="images">        
+    <div  class="image1">
+      <img src="kitchen tools.jpg">
+    </div>
+    <div  class="image1">
+      <img src="storage containers.jpg">
+    </div>
+  </div>
+  <div class="adlet" style="gap:70px;">
+     <p>Starting ₹89 | <br>Kitchen tools</p>
+     <p>Starting ₹279 | <br>Storage containers</p>
+  </div>
+  <div class="images">        
+    <div  class="image1">
+      <img src="cookware.jpg">
+    </div>
+    <div  class="image1">
+      <img src="racks & holders.jpg">
+    </div>
+  </div>
+  <div class="adlet" style="gap:50px;">
+     <p>Minimum 40% off |<br> Cookware</p>
+     <p>Up to 60% off |<br> Racks & holders</p>
+  </div>
+  <div style="font-size: 13px ;color:#007185;margin-left:20px;">
+    See all offers
+  </div>
+</div>            
+</div> 
+
+
+
+
+<!-- Slider 2 -->
+<div class="slider-container" id="sliderContainer2">
+  <div class="td_txt">
+    <h1>Up to 60% off | Check out the latest arrivals from stores near you</h1>
+    <a href="#"><h3 style="margin-top: 20px;margin-left:15px;">See all deals</h3></a>
+  </div>
+  <div class="slider-content" id="sliderContent2">
+    <div class="card"><img class="l" src="l1.jpg"></div>
+    <div class="card"><img class="l" src="l2.jpg"></div>
+    <div class="card"><img class="l" src="l3.jpg"></div>
+    <div class="card"><img class="l" src="l7.jpg"></div>
+    <div class="card"><img class="l" src="l5.jpg"></div>
+    <div class="card"><img class="l" src="l6.jpg"></div>
+    <div class="card"><img class="l" src="l7.jpg"></div>
+    <div class="card"><img class="l" src="l1.jpg"></div>
+  </div>
+<div class="nav-icons">
+  <button class="slider-btn" onclick="prevSlide('sliderContent2')">&#8249;</button>
+  <button class="slider-btn" onclick="nextSlide('sliderContent2')">&#8250;</button>
+</div>
+</div>
+
+<div class="slider-container" id="sliderContainer4">
+  <div class="td_txt">
+    <h1>Amazon LIVE - Watch, Chat & Shop LIVE</h1>
+    <a href="#"><h3 style="margin-top: 20px;margin-left:15px;">See more from amazon live</h3></a>
+  </div>
+  <iframe width="540" height="220" src="https://www.youtube.com/embed/vvGOI3CdWs4" frameborder="0" allowfullscreen></iframe>
+    
+  <div class="slider-content" id="sliderContent4">
+    
+ 
+  </div>
+<div class="nav-icons">
+  <button class="slider-btn" onclick="prevSlide('sliderContent4')">&#8249;</button>
+  <button class="slider-btn" onclick="nextSlide('sliderContent4')">&#8250;</button>
+</div>
+</div>
+
+
+
+<div class="main4">
+  <div id="p1"class="card1">
+      <div class="title1">
+         <h1>Get the perfect screen size<br>|TVs starting $6,999</h1>
+      </div>
+      <div class="images">        
+        <div  class="image1">
+          <img src="card1.jpg">
+        </div>
+        <div  class="image1">
+          <img src="43 inch.jpg">
+        </div>
+      </div>
+      <div class="adlet" style="gap:50px;">
+         <p>Budget TVs | Up to <br>60% off</p>
+         <p>4K TVs | Up to 24 <br>months No Cost EMI</p>
+      </div>
+      <div class="images">        
+        <div  class="image1">
+          <img src="55 inch.jpg">
+        </div>
+        <div  class="image1">
+          <img src="65 inch.jpg">
+        </div>
+      </div>
+      <div class="adlet" style="gap:50px;">
+         <p>Big Screens |Free<br>installation</p>
+         <p>Ultra Premium TVs |<br>Up to 50% off</p>
+      </div>
+      <div style="font-size: 13px ;color:#007185;margin-left:20px;">
+        See all offers
+      </div>
+  </div>
+
+
+  <div id="p1"class="card1">
+      <div class="title1">
+          <h1>Try Prime today</h1>
+      </div>
+      <div class="images">        
+        <div  class="image1">
+          <img src="prime1.jpg">
+        </div>
+        <div  class="image1">
+          <img src="prime2.jpg">
+        </div> 
+      </div>
+    <div class="adlet" style="gap:30px;">
+      <p>FREE 1-day delivery</p>
+      <p>Latest movies and TV<br>shows</p>
+    </div>
+    <div class="images" style="margin-top: 20px;">        
+      <div  class="image1">
+        <img src="prime3.jpg">
+      </div>
+      <div  class="image1">
+        <img src="prime4.jpg">
+      </div> 
+    </div>
+  <div class="adlet" style="gap:70px;">
+    <p>Ad-free music</p>
+    <p>Get unlimites 5%<br>cashback on...</p>
+  </div>
+  <div style="font-size: 13px ;color:#007185;margin-left:20px;margin-top:10px">
+    Enjoy all benfit of Prime
+  </div>
+</div>  
+
+
+
+  <div id="p1"class="card1">
+    <div class="title1">
+       <h1>Up to 75% off Headphones</h1>
+    </div>
+    <div class="images">        
+      <div  class="image1">
+        <img src="boat.jpg">
+      </div>
+      <div  class="image1">
+        <img src="boult.jpg">
+      </div>
+    </div>
+    <div class="adlet" style="gap:55px;">
+       <p>Up to 75% off | boAt</p>
+       <p>Up to 75% off | boult</p>
+    </div>
+    <div class="images" style="margin-top: 20px;">        
+      <div  class="image1">
+        <img src="noise.jpg">
+      </div>
+      <div  class="image1">
+        <img src="zebronics.jpg">
+      </div>
+    </div>
+    <div class="adlet" style="gap:55px;">
+       <p>Up to 75% off | Noise</p>
+       <p>Up to 75% off | Zebronics</p>
+    </div>
+    <div style="font-size: 13px ;color:#007185;margin-left:20px;">
+      See all offers
+    </div>
+</div>
+
+<div id="p1"class="card1">
+  <div class="title1">
+     <h1>Starting ₹89 | Amazon<br>Brands & more</h1>
+  </div>
+  <div class="images">        
+    <div  class="image1">
+      <img src="kitchen tools.jpg">
+    </div>
+    <div  class="image1">
+      <img src="storage containers.jpg">
+    </div>
+  </div>
+  <div class="adlet" style="gap:70px;">
+     <p>Starting ₹89 | <br>Kitchen tools</p>
+     <p>Starting ₹279 | <br>Storage containers</p>
+  </div>
+  <div class="images">        
+    <div  class="image1">
+      <img src="cookware.jpg">
+    </div>
+    <div  class="image1">
+      <img src="racks & holders.jpg">
+    </div>
+  </div>
+  <div class="adlet" style="gap:50px;">
+     <p>Minimum 40% off |<br> Cookware</p>
+     <p>Up to 60% off |<br> Racks & holders</p>
+  </div>
+  <div style="font-size: 13px ;color:#007185;margin-left:20px;">
+    See all offers
+  </div>
+</div>            
+</div> 
+
+
+
+
+<!-- -->
+<div class="slider-container" id="sliderContainer3">
+  <div class="td_txt">
+    <h1>Up to 60% off | Experience the joy of hassle-free cooking with kitchen appliances</h1>
+    <a href="#"><h3 style="margin-top: 20px;margin-left:15px;">See all deals</h3></a>
+  </div>
+  <div class="slider-content" id="sliderContent3">
+    <div class="card"><img class="cimg" src="k1.jpg"></div>
+    <div class="card"><img class="cimg" src="k2.jpg"></div>
+    <div class="card"><img class="cimg" src="k3.jpg"></div>
+    <div class="card"><img class="cimg" src="k4.jpg"></div>
+    <div class="card"><img class="cimg" src="k5.jpg"></div>
+    <div class="card"><img class="cimg" src="k6.jpg"></div>
+    <div class="card"><img class="cimg" src="k7.jpg"></div>
+    <div class="card"><img class="cimg" src="k8.jpg"></div>
+    <div class="card"><img class="cimg" src="k9.jpg"></div>
+    <div class="card"><img class="cimg" src="k10.jpg"></div>
+  </div>
+<div class="nav-icons">
+  <button class="slider-btn" onclick="prevSlide('sliderContent3')">&#8249;</button>
+  <button class="slider-btn" onclick="nextSlide('sliderContent3')">&#8250;</button>
+</div>
+</div>
+
+<script>
+  function showSlide(containerId, index) {
+    const sliderContent = document.getElementById(containerId);
+    const currentIndex = index % 3; // Assuming there are 3 cards
+    const translateValue = -currentIndex * 400; // Adjust this value based on the card width and margin
+    sliderContent.style.transform = `translateX(${translateValue}px)`;
+  }
+
+  function prevSlide(containerId) {
+    const sliderContent = document.getElementById(containerId);
+    const currentIndex = parseInt(sliderContent.style.transform.match(/-?\d+/)) || 0;
+    showSlide(containerId, currentIndex - 400);
+  }
+
+  function nextSlide(containerId) {
+    const sliderContent = document.getElementById(containerId);
+    const currentIndex = parseInt(sliderContent.style.transform.match(/-?\d+/)) || 0;
+    showSlide(containerId, currentIndex + 400);
+  }
+</script>
+
+
+
+
+
+  
+gap
+<footer>
+  <div class="back_to_top">
+    <div class="b1">Back to top</div>
+  </div>
+  <div class="content">
+    <div class="l1">
+    <span style="font-size: 16px;"><b>Get to Know Us</b></span><br><br>
+      About Us<br><br>
+      Careers<br><br>
+      Press Releases<br><br>
+      Amazon Science
+    </div>
+    <div class="l2">
+      <span style="font-size: 16px;"> <b>with Us</b></span><br><br>
+      Facebook<br><br>
+      Twitter<br><br>
+      Instagram
+    </div>
+    <div class="l3">
+      	<span style="font-size: 16px;"> <b>Money with Us</b></span><br><br>
+        Sell on Amazon<br><br>
+        Sell under Amazon Accelerator<br><br>
+        Protect and Build Your Brand<br><br>
+        Amazon Global Selling<br><br>
+        Become an Affiliate<br><br>
+        Fulfilment by Amazon <br><br>
+        Advertise Your Products<br><br>
+        Amazon Pay on Merchants
+    </div>
+    <div class="l4">
+      <span style="font-size: 16px;"><b>Let Us Help You</b></span><br><br>
+      COVID-19 and Amazon<br><br>
+      Your Account<br><br>
+      Returns Centre<br><br>
+      100% Purchase Protection<br><br> 
+      Amazon App Download<br><br>
+      Help
+    </div>
+  </div>
+  <div class="la"><br><br><br>
+    <hr>
+    <img src="amazon_logo.png">
+  
+  
+  </div>
+
+</footer>
+
+
+</body>
+</html>
